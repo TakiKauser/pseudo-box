@@ -30,6 +30,37 @@
         a:visited{
             color: dodgerblue;
         }
+        h3::before{
+            content: 'Hellow,This is ';
+            background-color: grey;
+            color: lavenderblush;
+        }
+        h3::after{
+            content: ". I'm Just Practising.";
+            background-color: indianred;
+            color: lightcyan;
+        }
+        #special::before{
+            background-color: lightseagreen;
+        }
+        #special::after{
+            background-color: lightskyblue;
+        }
+        li:first-child{
+            color: chocolate;
+        }
+        li:last-child{
+            color: darkorange;
+        }
+        li:nth-child(2n){
+            background-color: seagreen;
+        }
+        li:nth-child(2n+1){
+            background-color: goldenrod;
+        }
+        ul{
+            list-style: decimal-leading-zero;
+        }
     </style>
 </head>
 <body>
@@ -43,5 +74,18 @@
     <a href="https://www.microsoft.com/" target="_blank">Microsoft</a>
     <a href="https://www.apple.com/" target="_blank">Apple</a>
     <a href="https://www.underconsideration.com/brandnew/" target="_blank">Apple</a>
+
+    <h3>Third Level Header</h3>
+    <h3 id="special">Third Level Header</h3>
+    <h3>Third Level Header</h3>
+
+    <ul>
+        <li>tui</li>
+        <li>tui</li>
+        <li>tui</li>
+        <li>tui</li>
+        <li>tui</li>
+        <li>tui</li>
+    </ul>
 </body>
 </html>
